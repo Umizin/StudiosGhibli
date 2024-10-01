@@ -1,0 +1,209 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Fonte Japones";
+    src: url(fonte/P22MayflowerItalic.ttf) format("truetype");
+}
+
+body {
+    font-family: "Fonte Japones";
+    background-color: #f3e5ab00; 
+    color: #333;
+    background-size: cover;
+}
+
+header {
+    background-color: #1a94b3; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h1 {
+    font-family: "Fonte Japones";
+    font-weight: 7;
+}
+
+#containerSection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 6em;
+}
+
+#botaoMenu{
+    position: fixed;
+    top: 5em;      
+    right: 0.1em; 
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+    border: none;
+    padding: 2em 0.5em;
+    cursor: pointer;
+    font-size: 0.8rem;
+    z-index: 1000;
+    transition: transform 0.2s;
+}
+
+#botaoMenu:hover{
+    transform: scale(1.2);
+}
+
+#menuLateral{
+    position: fixed;
+    top: 0;
+    right: -13em;
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 13em;
+    height: 100%;
+    padding: 2rem;
+    color: white;
+    transition: right 0.3s ease;
+}
+
+#menuLateral.visivel{
+    right: 0;
+}
+
+#menuzinho{
+    position: fixed;
+    top: 1em;
+    right: -13em;
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 13em;
+    height: 20%;
+    padding: 2rem;
+    color: white;
+    transition: right 0.3s ease;
+    justify-content: center;
+}
+
+#menuzinho.visivel{
+    right: 13em;
+}
+
+.estiloMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.estiloMenu ul{
+    list-style-type: none;
+    justify-content: center;
+}
+
+.estiloMenu li{
+    justify-content: center;
+    padding: 1em;
+}
+
+#botaoFiltro{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+
+}
+
+#filtrarDefault{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+
+}
+
+#filtrarAlfabetico{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+
+}
+
+.estiloMenuzinho{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.estilobotao{
+    font-family: "Fonte Japones";
+    font-size: 1.23rem;
+    font-weight: bold;
+}
+
+.escondido{
+    display: none;
+}
+
+#containerFilmes{
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+    align-items: center; 
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #1a94b3;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.coracao{
+    padding-top: 0.2em;
+    padding-left: 0.2em;
+    transition: transform 0.2s;
+}
+
+.coracao:hover{
+    transform: scale(1.6);
+    cursor: pointer;
+}
+
+.coracao.clicado{
+    color: palevioletred
+}
+
+#abaFavoritos{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.setinha{
+    cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+    #containerSection {
+        grid-template-columns: 1fr;
+    }
+    #containerSection p {
+        max-width: 29em; 
+        margin: 0 auto;
+        font-size: 1.5rem;  
+    }
+
+    #containerSection h1{
+        font-size: 3rem;
+    }
+}

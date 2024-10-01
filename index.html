@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studios Ghibli</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img src="https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2020/06/Studio_Ghibli_logo.png?w=640&ssl=1" alt=""> 
+    </header>
+    <button id="botaoMenu"><span class="material-symbols-outlined">arrow_back</span></button>
+    <div id="menuLateral" class="escondido">
+        <div class="estiloMenu">
+            <h2>Menuzinho</h2>
+            <ul>
+                <li><button id="botaoFiltro" class="estilobotao">Filtros</button></li>
+                <div id="menuzinho" class="escondido estiloMenuzinho" >
+                    <button id="filtrarDefault" class="estilobotao">Filtrar por lançamento</button>
+                    <button id="filtrarAlfabetico" class="estilobotao">Filtrar por ordem alfabetica</button>
+                </div>
+                <li><div id="abaFavoritos">
+                    <h2>Favoritos</h2>
+                </div></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section id="containerSection">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 - Me da 10 Fabricio</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
